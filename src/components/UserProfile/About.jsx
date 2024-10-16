@@ -12,7 +12,6 @@ const About = ({ user, loggedUser }) => {
   const [update, setUpdate] = useState(false);
   const [isUpdating, setIsUpdating] = useState(false);
   const aboutRef = useRef();
-
   useEffect(() => {
     setAbout(user.about);
   }, [user]);
